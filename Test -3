@@ -1,0 +1,179 @@
+1))what are the various formatting tag?
+
+Following are the formatting tags:---
+a)<table>: Defines a table.
+b)<tr>: Defines a table row.
+c)<td>: Defines a table cell.
+d)<th>: Defines a table header cell.
+e)<tbody>: Groups the body content in a table.
+f)<tfoot>: Groups the footer content in a table.
+g)<font>
+h)<center>
+
+
+2))how can we merge two rows and two columns into single row and column also write a code for it in html
+
+To merge two rows and two columns into a single row and column in an HTML table, you can use the rowspan and colspan attributes.
+   a)rowspan: Merges cells vertically across multiple rows.
+   b)colspan: Merges cells horizontally across multiple columns.
+
+ EXAMPLE CODE:-
+
+   <html>
+<head>
+    <title>Merged Cells in Table</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>COLUMN 1</th>
+            <th>COLUMN 2</th>
+            <th>COLUMN 3</th>
+            <th>COLUMN 4</th>
+        </tr>
+        <tr>
+            <td>Row 1</td>
+            <td rowspan="2" colspan="2">Merged Cell (2 rows, 2 columns)</td>
+            <td>Row 1</td>
+        </tr>
+        <tr>
+            <td>Row 2</td>
+            <!-- This cell is merged -->
+            <td>Row 2</td>
+        </tr>
+        <tr>
+            <td>Row 3</td>
+            <td>Row 3</td>
+            <td>Row 3</td>
+            <td>Row 3</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+3))how is cellspacing different from cellpadding in html?
+
+ a)Cellspacing:--
+   Definition: cellspacing sets the space between individual table cells. It controls the width of the space between the cells.
+ b)Cellpadding:--
+   Definition: cellpadding sets the space between the cell content and the cell border. It controls the inner padding of each cell.
+both are the attribute of the table element.
+
+ EXPLAINATION CODE:---
+    <html>
+<head>
+    <title>Cellspacing & Cellpadding</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Using PADDING Attributes</h2>
+    <table cellspacing="10" cellpadding="10">
+        <tr>
+            <th>column1</th>
+            <th>column2</th>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+4)) what are semantic elements?
+   Semantic elements in HTML are those that clearly describe their meaning in a human- and machine-readable way. These elements provide information about the type of content they contain.
+   FOLLOWING ARE THE SEMENTIC ELEMENTS:--
+   a)<header>
+    b)<nav>
+   c)<main>
+    d)<section>
+    e)<article>
+    f)<aside>
+    g)<footer>
+
+
+
+5))write a program to insert background image in html
+
+CODE:--
+<html>
+<head>
+    <title>Background Image</title>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/free-photo/natures-beauty-captured-colorful-flower-close-up-generative-ai_188544-8593.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716422400&semt=sph'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-position: center; 
+        }
+
+        
+        h1, p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This page has a background image.</p>
+</body>
+</html>
+
+
+
+6))what is the alt attribute in html?
+
+The alt attribute in HTML is used to specify alternative text for an image (<img> tag). This alternative text is displayed if the image cannot be loaded or if the user is using a screen reader. 
+The alt attribute is important for accessibility, as it allows visually impaired users to understand the content and context of images through screen readers.
+
+EXAMPLE CODE:--
+
+<html>
+<head>
+    <title>Example of alt Attribute</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <img src="example.jpg" alt="A beautiful sunrise over the mountains">
+    <p>This image shows a stunning sunrise over the mountain range.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
