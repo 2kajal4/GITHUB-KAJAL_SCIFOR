@@ -1,0 +1,425 @@
+index.html
+
+<html>
+<head>
+<title> shopsy</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<header> 
+<h1>AQUAION FILTER</h1>
+<nav>
+    
+    <ul class="navbar-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+<section class="machine-list"> 
+<div class="machine">
+<img src="https://5.imimg.com/data5/GU/FY/GU/SELLER-13220437/aquagrand-ro-water-purifier-500x500.jpg " alt="machine">
+<h2>Aquafresh filter</h2>
+<p class="price">MRP ₹2000</p>
+<button>Add to cart</button>
+<button>Add to wishlist</button>
+</div>
+<div class="machine">
+<img src="https://rukminim2.flixcart.com/image/850/1000/ki3gknk0-0/water-purifier/5/o/t/blue-swift-grand-plus-original-imafxyz5tdz6tysd.jpeg?q=20&crop=false " alt="machine">
+<h2>AquaSwift filter</h2>
+<p class="price">MRP ₹5000</p>
+<button>Add to cart</button>
+<button>Add to wishlist</button>
+</div>
+<div class="machine">
+<img src="https://media.istockphoto.com/id/1284077647/photo/reverse-osmosis-water-purification-system-at-home-installed-water-purification-filters-clear.jpg?s=612x612&w=0&k=20&c=-Pa-nS2PnbkcduDpscamV-tXJoxJw6bYut-fZITuHQ0= " alt="machine">
+<h2>Big Filter</h2>
+<p class="price">MRP ₹3000 </p>
+<button>Add to cart</button>
+<button>Add to wishlist</button>
+</div>
+</section>
+<section class="machine-list"> 
+    <div class="machine">
+    <img src="https://5.imimg.com/data5/OQ/JB/KK/SELLER-53823390/apple-x.jpg " alt="machine">
+    <h2>Apple filter</h2>
+    <p class="price">MRP ₹2000</p>
+    <button>Add to cart</button>
+    <button>Add to wishlist</button>
+    </div>
+    <div class="machine">
+    <img src="https://rukminim2.flixcart.com/image/850/1000/ki3gknk0-0/water-purifier/5/o/t/blue-swift-grand-plus-original-imafxyz5tdz6tysd.jpeg?q=20&crop=false " alt="machine">
+    <h2>AquaSwift filter</h2>
+    <p class="price">MRP ₹5000</p>
+    <button>Add to cart</button>
+    <button>Add to wishlist</button>
+    </div>
+    <div class="machine">
+    <img src="https://media.istockphoto.com/id/1284077647/photo/reverse-osmosis-water-purification-system-at-home-installed-water-purification-filters-clear.jpg?s=612x612&w=0&k=20&c=-Pa-nS2PnbkcduDpscamV-tXJoxJw6bYut-fZITuHQ0= " alt="machine">
+    <h2>Big Filter</h2>
+    <p class="price">MRP ₹3000 </p>
+    <button>Add to cart</button>
+    <button>Add to wishlist</button>
+    </div>
+    </section>
+    <section class="machine-list"> 
+        <div class="machine">
+        <img src="https://5.imimg.com/data5/OQ/JB/KK/SELLER-53823390/apple-x.jpg " alt="machine">
+        <h2>Apple filter</h2>
+        <p class="price">MRP ₹2000</p>
+        <button>Add to cart</button>
+        <button>Add to wishlist</button>
+        </div>
+        <div class="machine">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/ki3gknk0-0/water-purifier/5/o/t/blue-swift-grand-plus-original-imafxyz5tdz6tysd.jpeg?q=20&crop=false " alt="machine">
+        <h2>AquaSwift filter</h2>
+        <p class="price">MRP ₹5000</p>
+        <button>Add to cart</button>
+        <button>Add to wishlist</button>
+        </div>
+        <div class="machine">
+        <img src="https://media.istockphoto.com/id/1284077647/photo/reverse-osmosis-water-purification-system-at-home-installed-water-purification-filters-clear.jpg?s=612x612&w=0&k=20&c=-Pa-nS2PnbkcduDpscamV-tXJoxJw6bYut-fZITuHQ0= " alt="machine">
+        <h2>Big Filter</h2>
+        <p class="price">MRP ₹3000 </p>
+        <button>Add to cart</button>
+        <button>Add to wishlist</button>
+        </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </footer>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+about.html
+
+<html>
+<head>
+    <title>About Us - Filter Machines Inc.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #007BFF;
+            color: white;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content p {
+            line-height: 1.6;
+            color: #666;
+        }
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .team-member {
+            text-align: center;
+            margin: 20px;
+            flex-basis: 30%;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Filter Machines Inc.</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Our Mission</h2>
+            <p>At Filter Machines Inc., we are dedicated to providing high-quality, efficient filter machines for both residential and commercial use. Our mission is to ensure that every household and business has access to clean, filtered water, promoting a healthier lifestyle and environment.</p>
+            
+            <h2>Our Story</h2>
+            <p>Founded in 2010, Filter Machines Inc. has grown from a small startup to a leading provider of water filtration solutions. Our journey began with a commitment to innovation, quality, and customer satisfaction. Today, we offer a wide range of products designed to meet the diverse needs of our customers.</p>
+            
+            <h2>Meet the Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="team1.jpg" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="team2.jpg" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Chief Technology Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="team3.jpg" alt="Mike Johnson">
+                    <h3>Mike Johnson</h3>
+                    <p>Head of Marketing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Filter Machines Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+contact.html
+
+
+<html>
+<head>
+    <title>Contact Us</title>
+<style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+     }
+    .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            max-width:400px;
+        }
+     h1 {
+            text-align: center;
+            color: #333;
+        }
+     form {
+            display: flex;
+            flex-direction: column;
+            max-width:"400px"
+        }
+        label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+style1.css
+
+
+body{
+    background-image: url;
+    font-family: arial, helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: white;
+}
+header{
+    background-color:darkblue;
+    color:white;
+    text-align: center;
+}
+h1{
+    margin:0;
+
+}
+main{
+    padding:20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: blueviolet;
+}
+
+nav ul li {
+    margin: 0 15px;
+    color:aqua;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.machine-list{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.machine{
+    background-color: white;
+    border:1 px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow:hidden;
+    width:300px;
+}
+.machine img{
+    max-width: 100%;
+    height:60%;
+}
+.machine h2{
+    font-size: 1.5rem;
+    margin:10px 0;
+}
+.machine .price{
+    color:brown;
+    font-size: 1.2rem;
+    margin:10px 0;
+}
+.machine button{
+    background-color: lightskyblue;
+    border:none;
+    color:white;
+    cursor:pointer;
+    padding:10px 20px ;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px;
+    width:100%;
+    gap:20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+.background {
+    background-image: url('background.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+}
+.content {
+    z-index: 1;
+    padding: 20px;
+}
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.content a {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.content a:hover {
+    background-color: #0056b3;
+}
+
