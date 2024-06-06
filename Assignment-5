@@ -1,0 +1,140 @@
+1))) form code:-------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Foundation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="medium-6 medium-offset-3 cell">
+                <h2>Registration Form</h2>
+                <form>
+                    <label>
+                        Name
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </label>
+                    <label>
+                        Password
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                    </label>
+                    <fieldset class="fieldset">
+                        <legend>Gender</legend>
+                        <input type="radio" name="gender" value="male" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female">Female</label>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <legend>Interests</legend>
+                        <input type="checkbox" name="interests" value="sports" id="sports">
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" name="interests" value="music" id="music">
+                        <label for="music">Music</label>
+                        <input type="checkbox" name="interests" value="reading" id="reading">
+                        <label for="reading">Reading</label>
+                        <input type="checkbox" name="interests" value="traveling" id="traveling">
+                        <label for="traveling">Traveling</label>
+                    </fieldset>
+                    <input type="submit" class="button" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+   
+
+
+2))) table code------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table with Foundation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-12">
+                <h1>Information Table</h1>
+                <table class="hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Gender</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sohail Tamboli</td>
+                            <td>sohail@example.com</td>
+                            <td>Male</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td>Kajal Sohail Tamboli</td>
+                            <td>kajal@example.com</td>
+                            <td>Female</td>
+                            <td>India</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Anam Tamboli</td>
+                            <td>anam@example.com</td>
+                            <td>Female</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td>Yasmeen Anwar Tamboli</td>
+                            <td>yasmeen@example.com</td>
+                            <td>Female</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td>Anwar Tamboli</td>
+                            <td>anwar@example.com</td>
+                            <td>Male</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>johndoe@example.com</td>
+                            <td>Male</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>janesmith@example.com</td>
+                            <td>Female</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Sam Brown</td>
+                            <td>sambrown@example.com</td>
+                            <td>Non-binary</td>
+                            <td>UK</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
