@@ -1,0 +1,20 @@
+<html>
+<head></head>
+    <title>Favorite Things</title>
+    <body>
+    <script type="text/javascript">
+        window.onload = function() {
+            var favoriteFood = "Pizza";
+            var favoriteColor = "Blue";
+            var favoriteVehicle = "Tesla Model S";
+            document.write("Favorite Food: " + favoriteFood);
+            document.write("<br>");
+            document.writeln("Favorite Color: " + favoriteColor);
+            document.writeln("<br>");
+            document.write("Favorite Vehicle: " + favoriteVehicle);
+        }
+    </script>
+
+<body>
+</body>
+</html>
