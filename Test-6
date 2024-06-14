@@ -1,0 +1,99 @@
+1))code:-----
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <script>
+        let num1 = 18;
+        let num2 = 5;
+
+        let addition = num1 + num2;
+        let subtraction = num1 - num2;
+        let multiplication = num1 * num2;
+        let division = num1 / num2;
+        let remainder = num1 % num2;
+
+       
+        document.write("Addition of " + num1 + " and " + num2 + " is: " + addition + "<br>");
+        document.write("Subtraction of " + num1 + " and " + num2 + " is: " + subtraction + "<br>");
+        document.write("Multiplication of " + num1 + " and " + num2 + " is: " + multiplication + "<br>");
+        document.write("Division of " + num1 + " and " + num2 + " is: " + division + "<br>");
+        document.write("Remainder of " + num1 + " and " + num2 + " is: " + remainder + "<br>");
+    </script>
+</body>
+</html>
+
+
+
+
+2))code---------
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>scope variables</title>
+</head>
+<body>
+    <script>
+        var globalVar = "Hii Everyone!";
+        let globalLet = "How are you!";
+        const globalConst = "How can i help you?";
+
+        document.write(globalVar + "<br>");
+        document.write(globalLet + "<br>");
+        document.write(globalConst + "<br>");
+
+        {
+            var blockVar = "block var variable";
+            let blockLet = "block let variable";
+
+            var globalVar = "redeclared global var variable"; 
+
+            document.write("<br>Inside block:<br>");
+            document.write(globalVar + "<br>"); 
+            document.write(globalLet + "<br>");
+            document.write(globalConst + "<br>"); 
+            document.write(blockVar + "<br>"); 
+            document.write(blockLet + "<br>"); 
+        }
+        document.write("<br>Outside block:<br>");
+        document.write(globalVar + "<br>"); 
+        document.write(globalLet + "<br>");
+        document.write(globalConst + "<br>"); 
+
+    </script>
+</body>
+</html>
+
+
+
+3))code-----------------
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Variable Data Types</title>
+</head>
+<body>
+    <script>
+
+        var stringVar = "Hello, World!";
+        var numberVar = 42;
+        var booleanVar = true;
+        var nullVar = null;
+        var undefinedVar;
+
+        document.write("String variable: " + stringVar + "<br>");
+        document.writeln("Number variable: " + numberVar + "<br>");
+        document.write("Boolean variable: " + booleanVar + "<br>");
+        document.writeln("Null variable: " + nullVar + "<br>");
+        document.write("Undefined variable: " + undefinedVar + "<br>");
+    </script>
+</body>
+</html>
+
+
+
