@@ -1,0 +1,128 @@
+
+1))code----------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var number=prompt("enter the number:-");
+
+        if(number>0){
+            document.write("the number is positive");
+        }else if(number=0){
+            document.write("the number is zero");
+        }
+        else{
+            document.write("the number is negative");
+
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+2.))  code-------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day of the Week Checker</title>
+    <script>
+        function getDayOfWeek() {
+            const input = prompt("Enter a number (1-7) to get the corresponding day of the week:");
+            const dayNumber = parseInt(input);
+
+            let dayName;
+
+            switch (dayNumber) {
+                case 1:
+                    dayName = "Sunday";
+                    break;
+                case 2:
+                    dayName = "Monday";
+                    break;
+                case 3:
+                    dayName = "Tuesday";
+                    break;
+                case 4:
+                    dayName = "Wednesday";
+                    break;
+                case 5:
+                    dayName = "Thursday";
+                    break;
+                case 6:
+                    dayName = "Friday";
+                    break;
+                case 7:
+                    dayName = "Saturday";
+                    break;
+                default:
+                    dayName = "Invalid day";
+            }
+
+            alert(dayName);
+        }
+    </script>
+</head>
+<body>
+    <h1>Day of the Week Checker</h1>
+    <button onclick="getDayOfWeek()">Check Day</button>
+</body>
+</html>
+
+
+3))  code_--------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Eligibility Checker</title>
+    <script>
+        
+            var age = prompt("Enter your age:");
+
+            if (age >= 18) {
+                 document.write("You are eligible to vote.");
+            } else {
+                 document.write ("You are not eligible to vote.");
+            }
+    </script>
+</head>
+</html>
+
+
+4)) code--------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Numbers 1 to 10</title>
+    <script>
+        for (let i = 1; i <= 10; i++) {
+            console.log(i); 
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
