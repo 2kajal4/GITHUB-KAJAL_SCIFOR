@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function calculator() {
+    const num1 = prompt("Enter the first number:");
+    const num2 = prompt("Enter the second number:");
+
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Please enter valid numbers.");
+        return;
+    }
+
+    const operation = prompt("Enter the operation (add, subtract, multiply, divide):").toLowerCase();
+    let result;
+
+    switch (operation) {
+        case 'add':
+            result = add(num1, num2);
+            break;
+        case 'subtract':
+            result = subtract(num1, num2);
+            break;
+        case 'multiply':
+            result = multiply(num1, num2);
+            break;
+        case 'divide':
+            result = divide(num1, num2);
+            break;
+        default:
+            result = 'Invalid operation';
+    }
+
+    alert('Result: ' + result);
+}
+function add(num1, num2) {
+    return num1 + num2;
+}
+function subtract(num1, num2) {
+    return num1 - num2;
+}
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+function divide(num1, num2) {
+    if (num2 === 0) {
+        return 'Error: Division by zero';
+    }
+    return num1 / num2;
+}
+calculator();
+
+
+    </script>
+    
+</body>
+</html>
