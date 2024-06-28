@@ -1,0 +1,136 @@
+1))----------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function adjustDate(date) {
+    let currentMonth = date.getMonth();
+    date.setMonth(currentMonth + 1);
+    date.setDate(15);
+    let fullYear = date.getFullYear();
+    return {
+        adjustedDate: date,
+        fullYear: fullYear
+    };
+}
+let date = new Date('2024-06-28');
+let result = adjustDate(date);
+document.write(result.adjustedDate); 
+document.write(result.fullYear);     
+    </script>
+    
+</body>
+</html>
+
+
+2))--------------------------------------------
+
+function countCharacterOccurrences(arr) {
+    let characterCounts = {};
+
+    arr.forEach(char => {
+        if (characterCounts[char]) {
+            characterCounts[char]++;
+        } else {
+            characterCounts[char] = 1;
+        }
+    });
+
+    return characterCounts;
+}
+let charArray = ['a', 'b', 'a', 'c', 'b', 'a'];
+let counts = countCharacterOccurrences(charArray);
+console.log(counts); 
+
+
+3))----------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse and Sort Array</title>
+</head>
+<body>
+    <script>
+        function reverseAndSortArray(arr) {
+            let reversedArray = arr.slice().reverse();
+            let sortedArray = reversedArray.sort();
+            return sortedArray;
+        }
+        let charArray = ['d', 'a', 'c', 'b'];
+        let sortedArray = reverseAndSortArray(charArray);
+        document.write(sortedArray); 
+    </script>
+</body>
+</html>
+
+4))-----------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format String</title>
+</head>
+<body>
+    <script>
+        function formatString(input) {
+            let upperCaseString = input.toUpperCase();
+            let lowerCaseString = input.toLowerCase();
+            let substring = input.substring(2, 6);
+            return {
+                upperCaseString: upperCaseString,
+                lowerCaseString: lowerCaseString,
+                substring: substring
+            };
+        }
+        let inputString = "HelloWorld";
+        let formattedStrings = formatString(inputString);
+        
+        document.write("<p>Uppercase String: " + formattedStrings.upperCaseString + "</p>");
+        document.write("<p>Lowercase String: " + formattedStrings.lowerCaseString + "</p>");
+        document.write("<p>Substring (2 to 5 inclusive): " + formattedStrings.substring + "</p>");
+    </script>
+</body>
+</html>
+
+
+
+5))----------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function manipulateArray(arr) {
+    arr.push("VOLVO");
+
+    arr.pop();
+
+    arr = arr.map(str => str.toUpperCase());
+    let joinedString = arr.join(", ");
+
+    return joinedString;
+}
+let stringArray = ["apple", "banana", "cherry"];
+let manipulatedString = manipulateArray(stringArray);
+document.write(manipulatedString); 
+
+    </script>
+    
+</body>
+</html>
