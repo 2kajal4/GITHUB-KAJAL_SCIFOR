@@ -1,0 +1,130 @@
+1))Create a simple webpage with two buttons to load data using AJAX and Fetch API from a dummy API (dummyjson.com). Display the data in a div. Style the page with basic CSS. Add comments to your code
+
+index.html:---------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX and Fetch API Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Load Data Example</h1>
+        <button id="loadDataAJAX">Load Data FOR AJAX</button>
+        <button id="loadDataFetch">Load Data FOR Fetch API</button>
+        <div id="dataDisplay"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+styles.css:----------------------------------------
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#dataDisplay {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+scripts.js:--------------------------------------------------------
+
+document.getElementById('loadDataAJAX').addEventListener('click', loadDataAJAX);
+document.getElementById('loadDataFetch').addEventListener('click', loadDataFetch);
+
+function loadDataAJAX() {
+    // Create a new XMLHttpRequest object
+    var xhr = new XMLHttpRequest();
+    // Configure it: GET-request for the URL
+    xhr.open('GET', 'https://dummyjson.com/products/1', true);
+
+    // Set up the callback function for when the request is completed
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            // Parse the JSON response
+            var data = JSON.parse(xhr.responseText);
+            // Display the data
+            document.getElementById('dataDisplay').innerHTML = formatData(data);
+        } else {
+            console.error('Error loading data with AJAX');
+        }
+    };
+
+    // Send the request
+    xhr.send();
+}
+
+function loadDataFetch() {
+    // Use the Fetch API to get the data
+    fetch('https://dummyjson.com/products/1')
+        .then(response => {
+            // Check if the response is OK (status 200-299)
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            // Parse the JSON response
+            return response.json();
+        })
+        .then(data => {
+            // Display the data
+            document.getElementById('dataDisplay').innerHTML = formatData(data);
+        })
+        .catch(error => {
+            console.error('Error loading data with Fetch API:', error);
+        });
+}
+
+function formatData(data) {
+    // Format the data into HTML
+    return `
+        <h2>${data.title}</h2>
+        <p>${data.description}</p>
+        <p><strong>Price:</strong> $${data.price}</p>
+        <p><strong>Rating:</strong> ${data.rating}</p>
+    `;
+}
+
+
+
+
+
+
+
