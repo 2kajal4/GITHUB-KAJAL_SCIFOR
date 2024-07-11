@@ -1,0 +1,544 @@
+index.html:----------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Kajal Shukla Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="kajal shukla cv.pdf" download>Download CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="container">
+            <img src="coding.jpg" alt="Coding" class="profile-photo">
+            <h1 class="welcome-message">Welcome to Frontend Developer Portfolio</h1>
+            <p>Hi! Myself an IT student Learning and exploring each day!</p>
+            <a href="kajal shukla cv.pdf" class="btn btn-primary" download>Download CV</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="kajal.jpg.jpeg" alt="Profile Photo" class="profile-photo">
+                </div>
+                <div class="col-md-8">
+                    <p style="color:orange;">
+                       <h7> Hello! I am an IT Student currently in my third year of Information Technology.My passion for technology drives me to constantly learn. I have a strong foundation in frontend development.</h7>
+                    </p>
+                    <p style="color:orange;">
+                        I am always eager to take on new challenges and am dedicated to continuously improving my skills. My goal is to create innovative and efficient solutions that can make a positive impact. 
+                    </p>
+                </div>
+            </div>
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <img src="html.png" alt="HTML" class="skill-image">
+                    <h5>HTML</h5>
+                </div>
+                <div class="skill-item">
+                    <img src="css.png" alt="CSS" class="skill-image">
+                    <h5>CSS</h5>
+                </div>
+                <div class="skill-item">
+                    <img src="javascript.png" alt="JavaScript" class="skill-image">
+                    <h5>JavaScript</h5>
+                </div>
+                <div class="skill-item">
+                    <img src="bootstrap.jpeg" alt="Bootstrap" class="skill-image">
+                    <h5>Bootstrap</h5>
+                </div>
+                <div class="skill-item">
+                    <img src="python.jpeg" alt="Python" class="skill-image">
+                    <h5>Python</h5>
+                </div>
+                <div class="skill-item">
+                    <img src="c++.png" alt="C++" class="skill-image">
+                    <h5>C++</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 project">
+                    <img src="https://bigsondev.com/static/33fd1874793e4bb04017e11c17a54cb3/ee604/calculator-app.png" alt="Project 1" class="project-thumbnail">
+                    <h4>Calculator</h4>
+                    <p>The calculator is made with the help of HTML, CSS, and JavaScript. It can perform all operations.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 project">
+                    <img src="https://codewithcurious.com/wp-content/uploads/2022/11/Handwritten-Notes-25-1024x576.png" alt="Project 2" class="project-thumbnail">
+                    <h4>Snake Game</h4>
+                    <p>This project is used to play the snake game. It is made using the Python language.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 project">
+                    <img src="https://graffersid.com/wp-content/uploads/2021/03/Hospital-Management-App.png" alt="Project 3" class="project-thumbnail">
+                    <h4>Hospital Management</h4>
+                    <p>This website is used to manage a hospital with a backend to save data in databases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control form-control-sm" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control form-control-sm" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="form-control form-control-sm" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control form-control-sm" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <button id="back-to-top" class="btn btn-secondary">Back to Top</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+styles.css:------------------------------
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 40px;
+    background-color: #333;
+}
+
+.navbar-nav .nav-link {
+    color: orangered;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: yellow;
+}
+
+.section {
+    padding: 100px 0;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.welcome-message {
+    font-size: 2.5rem;
+    color: orange;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 3s forwards;
+}
+
+.welcome-message + p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 3s forwards 2s;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h5 {
+    color: dodgerblue;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    max-width: 600px; /* Optional: Adjust maximum width for paragraph */
+    margin: 0 auto 20px; 
+     /* Center align paragraph *//* Center align paragraph */
+}
+#home{
+    text-align: center;
+
+}
+
+h4 {
+    color: orangered;
+}
+
+a {
+    font-size: 20px;
+}
+
+h3 {
+    color: blue;
+}
+
+h2 {
+    color: orangered;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.skill-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+img {
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+label {
+    color: red;
+    display: block;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%; /* Full width of parent container */
+    max-width: 500px; /* Maximum width to control size */
+}
+
+/* Centering contact section */
+#contact {
+    text-align: center; /* Center align contents */
+}
+
+#contact .container {
+    max-width: 600px; /* Adjust container width */
+    margin: auto; /* Center container horizontally */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Adjust spacing between form groups */
+}
+
+.form-group label {
+    display: block; /* Labels as block elements to appear above input fields */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .project {
+        margin-bottom: 20px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+script.js:----------------------------------------------
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 40px;
+    background-color: #333;
+}
+
+.navbar-nav .nav-link {
+    color: orangered;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: yellow;
+}
+
+.section {
+    padding: 100px 0;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.welcome-message {
+    font-size: 2.5rem;
+    color: orange;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 3s forwards;
+}
+
+.welcome-message + p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 3s forwards 2s;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h5 {
+    color: dodgerblue;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    max-width: 600px; /* Optional: Adjust maximum width for paragraph */
+    margin: 0 auto 20px; 
+     /* Center align paragraph *//* Center align paragraph */
+}
+#home{
+    text-align: center;
+
+}
+
+h4 {
+    color: orangered;
+}
+
+a {
+    font-size: 20px;
+}
+
+h3 {
+    color: blue;
+}
+
+h2 {
+    color: orangered;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.skill-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+img {
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+label {
+    color: red;
+    display: block;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%; /* Full width of parent container */
+    max-width: 500px; /* Maximum width to control size */
+}
+
+/* Centering contact section */
+#contact {
+    text-align: center; /* Center align contents */
+}
+
+#contact .container {
+    max-width: 600px; /* Adjust container width */
+    margin: auto; /* Center container horizontally */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Adjust spacing between form groups */
+}
+
+.form-group label {
+    display: block; /* Labels as block elements to appear above input fields */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .project {
+        margin-bottom: 20px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
