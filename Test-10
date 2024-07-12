@@ -1,0 +1,101 @@
+1))CREATE A FUNCTIONAL COMPONENT USERDETAILS THAT ACCEPTS PROPS AND RENDERS NAME: [PROPS.NAME], AGE: [PROPS.AGE],EMAIL:[PROPS.EMAIL],MOBILENO:[PROPS.MOBILENO] CITY: [PROPS.CITY].
+code:--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Functional Component</title>
+  <!-- Include React and ReactDOM libraries from a CDN -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+  
+  <div id="root"></div>
+
+  <script type="text/javascript">
+   
+    function UserDetails(props) {
+      return (
+        <div>
+          <p>Name: {props.name}</p>
+          <p>Age: {props.age}</p>
+          <p>Email: {props.email}</p>
+          <p>Mobile No: {props.mobileNo}</p>
+          <p>City: {props.city}</p>
+        </div>
+      );
+    }
+
+    // Example props
+    const user = {
+      name: "Kajal shukla",
+      age: 30,
+      email: "kajalshukla@example.com",
+      mobileNo: "123-456-7890",
+      city: "INDIA"
+    };
+
+    ReactDOM.render(<UserDetails {...user} />, document.getElementById('root'));
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+2))CREATE A CLASS COMPONENT THAT RENDERS A HEADING AND A PARAGRAPH WITH SOME INLINE STYLING:------------
+
+code:----
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Inline Styling</title>
+  <!-- Include React and ReactDOM libraries from a CDN -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+  <!-- Root element for the React application -->
+  <div id="root"></div>
+
+  <script type="text/javascript">
+    // Define the React class component
+    class StyledComponent extends React.Component {
+      render() {
+        const headingStyle = {
+          color: 'blue',
+          fontSize: '24px',
+          textAlign: 'center',
+        };
+
+        const paragraphStyle = {
+          color: 'gray',
+          fontSize: '16px',
+          textAlign: 'justify',
+          margin: '20px',
+        };
+
+        return (
+          <div>
+            <h1 style={headingStyle}>THis is the heading to render components</h1>
+            <p style={paragraphStyle}>
+              Hii everyone! Lets see how to render the components and excute our code.
+            </p>
+          </div>
+        );
+      }
+    }
+
+    // Render the React component into the DOM
+    ReactDOM.render(<StyledComponent />, document.getElementById('root'));
+  </script>
+</body>
+</html>
