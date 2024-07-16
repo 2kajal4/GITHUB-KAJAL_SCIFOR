@@ -1,0 +1,74 @@
+Assignment 10:
+Create a class component and demonstrate how to send data using props. Show how you can update an object's property using the setState() method inside the component.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Class Component Example</title>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <!-- React and ReactDOM -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  <!-- React Components -->
+  <script type="text/babel">
+    class ChildComponent extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          person: this.props.person
+        };
+      }
+
+      updateAge = () => {
+        this.setState(prevState => ({
+          person: {
+            ...prevState.person,
+            age: prevState.person.age + 1
+          }
+        }));
+      };
+
+      render() {
+        const { name, age } = this.state.person;
+
+        return (
+          <div>
+            <h2>Child Component</h2>
+            <p>Name: {name}</p>
+            <p>Age: {age}</p>
+            <button onClick={this.updateAge}>Increase Age</button>
+          </div>
+        );
+      }
+    }
+
+    class ParentComponent extends React.Component {
+      render() {
+        const person = {
+          name: 'John Doe',
+          age: 30
+        };
+
+        return (
+          <div>
+            <h1>Parent Component</h1>
+            <ChildComponent person={person} />
+          </div>
+        );
+      }
+    }
+
+    // Render the ParentComponent
+    ReactDOM.render(<ParentComponent />, document.getElementById('root'));
+  </script>
+</body>
+</html>
