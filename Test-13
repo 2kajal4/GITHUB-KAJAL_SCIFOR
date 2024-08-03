@@ -1,0 +1,41 @@
+1)) What is a RESTfulAPI?	
+
+A RESTful API (Representational State Transfer API) is a web service that follows the principles of REST architecture.
+It uses standard HTTP methods like GET, POST, PUT, and DELETE to perform CRUD (Create, Read, Update, Delete) operations on resources identified by URLs. 
+RESTful APIs are stateless, meaning each request from a client contains all the information needed to process the request, and they often use JSON or XML for data representation
+. This architecture is known for its simplicity, scalability, and flexibility.
+
+
+2))WRITE A PROGRAM THAT PROMPTS THE USER TO ENTER TWO INTEGERS AND THEN DIVIDES THE FIRST INTEGER BY THE SECOND. USE A TRY-CATCH BLOCK TO HANDLE ANY POTENTIAL DIVISION BY ZERO ERRORS.
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch Example</title>
+    <script>
+        function divideNumbers() {
+            try {
+                
+                var num1 = parseFloat(document.getElementById("num1").value);
+                var num2 = parseFloat(document.getElementById("num2").value);
+                if (num2 === 0) {
+                    throw new Error("Division by zero is not allowed.");
+                }
+                var result = num1 / num2;
+                document.getElementById("result").innerText = "Result: " + result;
+            } catch (error) {
+                document.getElementById("result").innerText = "Error: " + error.message;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Try Catch Assignment</h1>
+    <p>Enter two numbers to divide:</p>
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
+    <button onclick="divideNumbers()">Divide</button>
+    <p id="result"></p>
+</body>
+</html>
