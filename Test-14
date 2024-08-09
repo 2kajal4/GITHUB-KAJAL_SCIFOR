@@ -1,0 +1,24 @@
+Edit the app.component.ts file to include the title and heading variables:
+
+typescript
+// src/app/app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'Welcome to My Angular App';
+  heading = 'This is a Sample Heading';
+}
+
+ update the app.component.html file to display the title and heading using Angular interpolation:
+
+html
+<!-- src/app/app.component.html -->
+<div style="text-align: center;">
+  <h1>{{ title }}</h1>
+  <p>{{ heading }}</p>
+</div>
